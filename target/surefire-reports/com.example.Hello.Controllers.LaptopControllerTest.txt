@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.example.Hello.Controllers.LaptopControllerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 13.529 s <<< FAILURE! - in com.example.Hello.Controllers.LaptopControllerTest
+create  Time elapsed: 0.437 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.springframework.boot.test.web.client.TestRestTemplate.exchange(String, org.springframework.http.HttpMethod, org.springframework.http.HttpEntity, java.lang.Class, Object[])" because "this.testRestTemplate" is null
+	at com.example.Hello.Controllers.LaptopControllerTest.create(LaptopControllerTest.java:70)
+
+findAll  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.springframework.boot.test.web.client.TestRestTemplate.getForEntity(String, java.lang.Class, Object[])" because "this.testRestTemplate" is null
+	at com.example.Hello.Controllers.LaptopControllerTest.findAll(LaptopControllerTest.java:27)
+
+findOneById  Time elapsed: 0.013 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.springframework.boot.test.web.client.TestRestTemplate.getForEntity(String, java.lang.Class, Object[])" because "this.testRestTemplate" is null
+	at com.example.Hello.Controllers.LaptopControllerTest.findOneById(LaptopControllerTest.java:40)
+
